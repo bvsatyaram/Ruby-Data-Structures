@@ -49,4 +49,11 @@ class StackAsArray
 
     return x
   end
+
+  def reset
+    @array = Array.new(@array.length)
+    @top = nil
+  end
+
+  #TODO: Implement *each* method
 end

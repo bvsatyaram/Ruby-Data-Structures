@@ -66,4 +66,21 @@ class StackAsArrayTest < Test::Unit::TestCase
       stack.pop
     end
   end
+
+  def test_stack_as_array_reset
+    stack = StackAsArray.new(3)
+
+    assert stack.empty?
+    assert !stack.singleton?
+    assert !stack.full?
+
+    stack.push(1)
+    stack.push(2)
+
+    assert !stack.empty?
+
+    stack.reset
+
+    assert stack.empty?
+  end
 end

@@ -78,9 +78,11 @@ class StackAsArrayTest < Test::Unit::TestCase
     stack.push(2)
 
     assert !stack.empty?
+    assert !stack.full?
 
     stack.reset
 
     assert stack.empty?
+    assert !stack.full?
   end
 end

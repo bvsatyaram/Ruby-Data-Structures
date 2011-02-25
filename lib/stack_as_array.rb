@@ -1,26 +1,26 @@
 class StackAsArray
-  # Initializes a stack of size *size*
-  # The value of *top* for an empty stack is +nil+
+  # Initializes a stack of size +size+
+  # The value of +top+ for an empty stack is +nil+
   def initialize(size = 1)
-    @array = Array.new(size)
-    @top = nil
+    @length = size
+    self.reset
   end
 
-  # Returns true if the stack is empty
+  # Returns +true+ if the stack is empty
   def empty?
     @top.nil?
   end
 
-  # Returns true if the stack is full
+  # Returns +true+ if the stack is full
   def full?
-    @top == @array.length - 1
+    @top == @length - 1
   end
 
   def singleton?
     @top == 0
   end
 
-  # Pushes an element *element* into the stack
+  # Pushes an element +element+ into the stack
   def push(element)
     if self.full?
       raise "Stack Overflow - The stack is full"
@@ -35,6 +35,7 @@ class StackAsArray
     @array[@top] = element
   end
 
+  # Pops the stack
   def pop
     if self.empty?
       raise "Stack Underflow - The stack is empty"
@@ -50,8 +51,9 @@ class StackAsArray
     return x
   end
 
+  # Resets the stack
   def reset
-    @array = Array.new(@array.length)
+    @array = Array.new(@length)
     @top = nil
   end
 

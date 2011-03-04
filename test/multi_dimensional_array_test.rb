@@ -4,7 +4,7 @@
 $:.unshift File.join(File.dirname(__FILE__),'..','lib')
 
 require 'test/unit'
-require 'multi_dimensional_array'
+require 'RubyDataStructures'
 
 class MultiDimensionalArrayTest < Test::Unit::TestCase
   def setup

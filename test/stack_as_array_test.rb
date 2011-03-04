@@ -4,7 +4,7 @@
 $:.unshift File.join(File.dirname(__FILE__),'..','lib')
 
 require 'test/unit'
-require 'stack_as_array'
+require 'RubyDataStructures'
 
 class StackAsArrayTest < Test::Unit::TestCase
   def test_stack_as_array

@@ -1,1 +1,5 @@
 nbproject
+*.gem
+.bundle
+Gemfile.lock
+pkg/*

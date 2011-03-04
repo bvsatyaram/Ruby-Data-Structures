@@ -4,9 +4,7 @@
 $:.unshift File.join(File.dirname(__FILE__),'..','lib')
 
 require 'test/unit'
-require 'queue_as_array'
-require 'rubygems'
-require 'ruby-debug'
+require 'RubyDataStructures'
 
 class QueueAsArrayTest < Test::Unit::TestCase
   def test_queue_as_array

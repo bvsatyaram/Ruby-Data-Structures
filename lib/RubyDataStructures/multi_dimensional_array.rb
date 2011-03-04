@@ -21,9 +21,8 @@ class RubyDataStructures::MultiDimensionalArray
     offset = 0
 
     (0..(@dimensions.length - 1)).each do |i|
-      if indices[i] < 0 || indices[i] >= @dimensions[i]
-        raise IndexError
-      end
+      
+      raise IndexError if indices[i] < 0 || indices[i] >= @dimensions[i]
 
       offset += @factors[i]*indices[i]
     end

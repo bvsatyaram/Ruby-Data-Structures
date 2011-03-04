@@ -1,4 +1,4 @@
-class QueueAsArray
+class RubyDataStructures::QueueAsArray
   # Initializes a stack of size +size+
   # The value of +head+ for a new stack is +nil+
   # The value of +tail+ for a new stack is +0+
@@ -19,9 +19,7 @@ class QueueAsArray
 
   # The queue is enqueued with +element+
   def enqueue(element)
-    if self.full?
-      raise "Queue Overflow - The queue is full"
-    end
+    raise "Queue Overflow - The queue is full" if self.full?
 
     @array[@tail] = element
 
@@ -38,9 +36,7 @@ class QueueAsArray
 
   # The queue is dequeued
   def dequeue
-    if self.empty?
-      raise "Queue Underflow - The queue is empty"
-    end
+    raise "Queue Underflow - The queue is empty" if self.empty?
     
     x = @array[@head]
 

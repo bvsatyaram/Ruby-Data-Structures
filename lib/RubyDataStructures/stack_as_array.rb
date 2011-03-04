@@ -1,4 +1,4 @@
-class StackAsArray
+class RubyDataStructures::StackAsArray
   # Initializes a stack of size +size+
   # The value of +top+ for an empty stack is +nil+
   def initialize(size = 1)
@@ -22,9 +22,8 @@ class StackAsArray
 
   # Pushes an element +element+ into the stack
   def push(element)
-    if self.full?
-      raise "Stack Overflow - The stack is full"
-    end
+    
+    raise "Stack Overflow - The stack is full" if self.full?
 
     if self.empty?
       @top = 0
@@ -37,9 +36,7 @@ class StackAsArray
 
   # Pops the stack
   def pop
-    if self.empty?
-      raise "Stack Underflow - The stack is empty"
-    end
+    raise "Stack Underflow - The stack is empty" if self.empty?
 
     x = @array[@top]
     if self.singleton?

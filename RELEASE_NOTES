@@ -1,0 +1,27 @@
+= Announce: RubyDatStructures Release 0.0.1
+
+Release 0.0.1 makes the project public.
+
+ $ gem install RubyDataStructures
+
+New features:
+
+* MultiDimensionalArray
+* StackAsArray
+* QueueAsArray
+
+Deprecation Notices:
+
+* None
+
+Bugs Fixed:
+
+* None
+
+Other Changes Include:
+
+* None
+
+== Thanks
+
+-- Satyaram B V

@@ -1,5 +1,31 @@
-= Announce: RubyDatStructures Release 0.0.1
+= Announce: Ruby DataStructures Release 0.0.2
+Date Mar 5, 2011
+Release 0.0.2 adds new features.
 
+New features:
+
+* SinglyLinkedList
+
+Deprecation Notices:
+
+* None
+
+Bugs Fixed:
+
+* None
+
+Other Changes Include:
+
+* None
+
+== Thanks
+
+-- Satyaram B V
+
+===========================================
+
+= Announce: RubyDatStructures Release 0.0.1
+Date: Mar 4, 2011
 Release 0.0.1 makes the project public.
 
  $ gem install RubyDataStructures

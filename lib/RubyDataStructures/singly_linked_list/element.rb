@@ -1,6 +1,3 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
 class RubyDataStructures::SinglyLinkedList::Element
   attr_accessor :key
   attr_accessor :next

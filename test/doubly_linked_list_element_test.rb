@@ -3,7 +3,7 @@ $:.unshift File.join(File.dirname(__FILE__),'..','lib')
 require 'test/unit'
 require 'RubyDataStructures'
 
-class SinglyLinkedListElementTest < Test::Unit::TestCase
+class DoublyLinkedListElementTest < Test::Unit::TestCase
   def setup
     @list = RubyDataStructures::SinglyLinkedList.new
     @element = RubyDataStructures::SinglyLinkedList::Element.new(@list, 9)

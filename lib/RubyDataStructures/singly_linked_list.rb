@@ -1,20 +1,20 @@
-class RubyDataStructures::SinglyLinkedList  
+class RubyDataStructures::SinglyLinkedList
   # Initializes the SinglyLinkedList
   def initialize
-    @sentinal = RubyDataStructures::SinglyLinkedList::Element.new(self, nil)
+    @sentinel = RubyDataStructures::SinglyLinkedList::Element.new(self, nil)
     self.reset
   end
 
   def head
-    @sentinal.next
+    @sentinel.next
   end
 
   def empty?
-    self.head == @sentinal
+    self.head == @sentinel
   end
 
   def reset
-    @sentinal.next = @sentinal
+    @sentinel.next = @sentinel
   end
 
   # Splices an element onto the front of the linked list
@@ -22,8 +22,8 @@ class RubyDataStructures::SinglyLinkedList
   # *item* => Value to store in the element to be inserted
   def insert(item)
     element = RubyDataStructures::SinglyLinkedList::Element.new(self, item)
-    element.next = @sentinal.next
-    @sentinal.next = element
+    element.next = @sentinel.next
+    @sentinel.next = element
   end
 
   # Returns the first element with a given key
@@ -31,7 +31,7 @@ class RubyDataStructures::SinglyLinkedList
   # *key* => Key of the element to be searched for
   def search(key)
     element = self.head
-    while (element != @sentinal) && (element.key != key)
+    while (element != @sentinel) && (element.key != key)
       element = element.next
     end
 
@@ -43,14 +43,14 @@ class RubyDataStructures::SinglyLinkedList
   # *key* => Key of the element to be removed
   def delete(key)
     element = self.head
-    prev_element = @sentinal
+    prev_element = @sentinel
     
-    while (element != @sentinal) && (element.key != key)
+    while (element != @sentinel) && (element.key != key)
       prev_element = element
       element = element.next
     end
 
-    if element == @sentinal
+    if element == @sentinel
       raise "Argument Error - No element with the key found"
     else
       prev_element.next = element.next

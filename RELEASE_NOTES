@@ -1,3 +1,28 @@
+= Announce: Ruby DataStructures Release 0.0.3
+Date Mar 5, 2011
+Release 0.0.3 adds new features.
+
+New features:
+
+* DoublyLinkedList
+
+Deprecation Notices:
+
+* None
+
+Bugs Fixed:
+
+* None
+
+Other Changes Include:
+
+* Fixed typo: sentinal => sentinel
+
+== Thanks
+
+-- Satyaram B V
+
+===========================================
 = Announce: Ruby DataStructures Release 0.0.2
 Date Mar 5, 2011
 Release 0.0.2 adds new features.

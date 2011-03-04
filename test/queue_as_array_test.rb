@@ -8,7 +8,7 @@ require 'RubyDataStructures'
 
 class QueueAsArrayTest < Test::Unit::TestCase
   def test_queue_as_array
-    queue = QueueAsArray.new(3)
+    queue = RubyDataStructures::QueueAsArray.new(3)
 
     assert queue.empty?
     assert !queue.full?
@@ -67,7 +67,7 @@ class QueueAsArrayTest < Test::Unit::TestCase
   end
 
   def test_queue_as_array_reset
-    queue = QueueAsArray.new(3)
+    queue = RubyDataStructures::QueueAsArray.new(3)
 
     assert queue.empty?
     assert !queue.full?

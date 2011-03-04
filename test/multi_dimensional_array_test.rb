@@ -8,7 +8,7 @@ require 'RubyDataStructures'
 
 class MultiDimensionalArrayTest < Test::Unit::TestCase
   def setup
-    @mda = MultiDimensionalArray.new(2,3,4)
+    @mda = RubyDataStructures::MultiDimensionalArray.new(2,3,4)
   end
 
   def test_multi_dimensional_array

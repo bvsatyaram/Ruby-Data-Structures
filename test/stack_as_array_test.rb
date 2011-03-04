@@ -8,7 +8,7 @@ require 'RubyDataStructures'
 
 class StackAsArrayTest < Test::Unit::TestCase
   def test_stack_as_array
-    stack = StackAsArray.new(3)
+    stack = RubyDataStructures::StackAsArray.new(3)
 
     assert stack.empty?
     assert !stack.singleton?
@@ -68,7 +68,7 @@ class StackAsArrayTest < Test::Unit::TestCase
   end
 
   def test_stack_as_array_reset
-    stack = StackAsArray.new(3)
+    stack = RubyDataStructures::StackAsArray.new(3)
 
     assert stack.empty?
     assert !stack.singleton?

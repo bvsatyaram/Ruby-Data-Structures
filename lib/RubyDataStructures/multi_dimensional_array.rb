@@ -1,4 +1,4 @@
-class MultiDimensionalArray
+class RubyDataStructures::MultiDimensionalArray
   def initialize(*dimensions)
     @dimensions = Array.new(dimensions.length)
     @factors = Array.new(dimensions.length)

@@ -1,3 +1,13 @@
+= Announce: Ruby DataStructures Release 0.0.4
+Date Mar 5, 2011
+Release 0.0.4 is just a dummy release to fix some gem push issues.
+
+== Thanks
+
+-- Satyaram B V
+
+===========================================
+
 = Announce: Ruby DataStructures Release 0.0.3
 Date Mar 5, 2011
 Release 0.0.3 adds new features.
@@ -23,6 +33,7 @@ Other Changes Include:
 -- Satyaram B V
 
 ===========================================
+
 = Announce: Ruby DataStructures Release 0.0.2
 Date Mar 5, 2011
 Release 0.0.2 adds new features.

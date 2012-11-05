@@ -54,5 +54,17 @@ class RubyDataStructures::StackAsArray
     @top = nil
   end
 
-  #TODO: Implement *each* method
+  def first
+    @array.first
+  end
+
+  def last
+    @array.last
+  end
+
+  def each
+    @array.each do
+      yield
+    end
+  end
 end

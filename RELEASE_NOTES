@@ -1,3 +1,14 @@
+= Announce: Ruby DataStructures Release 1.1.0
+
+- Added FifoStack.
+- Added macros
+- Extra Documentation
+- Rakefile for running tests
+
+= Announce: Ruby DataStructures Release 1.0.0
+
+Basic data structures in place
+
 = Announce: Ruby DataStructures Release 0.0.4
 Date Mar 5, 2011
 Release 0.0.4 is just a dummy release to fix some gem push issues.

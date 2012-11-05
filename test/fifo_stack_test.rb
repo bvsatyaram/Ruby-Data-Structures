@@ -10,6 +10,8 @@ class AutoStackTest < Test::Unit::TestCase
     assert stack.empty?
     assert !stack.singleton?
     assert !stack.full?
+    assert stack.length == 2
+    # assert stack.size == 0
 
     assert_raise RuntimeError, "Stack Underflow - The stack is empty" do
       stack.pop
@@ -20,6 +22,8 @@ class AutoStackTest < Test::Unit::TestCase
     assert stack.singleton?
     assert !stack.full?
     assert stack.first == 1
+    assert stack.length == 2
+    # assert stack.size == 1
 
     stack.push(2)
     assert !stack.empty?
@@ -31,6 +35,7 @@ class AutoStackTest < Test::Unit::TestCase
     assert !stack.empty?
     assert !stack.singleton?
     assert stack.full?
+    assert stack.size == 2    
     assert stack.first == 2
     assert stack.last == 3
 
@@ -42,5 +47,6 @@ class AutoStackTest < Test::Unit::TestCase
     assert stack.last == 4
     assert stack.pop == 4
     assert !stack.full?
+    assert stack.size == 2
   end
 end

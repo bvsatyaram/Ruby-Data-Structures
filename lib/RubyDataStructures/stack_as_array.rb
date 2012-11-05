@@ -1,4 +1,6 @@
 class RubyDataStructures::StackAsArray
+  attr_reader :length
+
   # Initializes a stack of size +size+
   # The value of +top+ for an empty stack is +nil+
   def initialize(size = 1)
@@ -52,6 +54,11 @@ class RubyDataStructures::StackAsArray
   def reset
     @array = Array.new(@length)
     @top = nil
+  end
+  alias_method :reset!, :reset
+
+  def size
+    @array.size
   end
 
   def first

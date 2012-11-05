@@ -87,6 +87,10 @@ Examples:
     my_stach.push(3)
     my_stack.pop        # Return `3`
 
+*Notes:*
+Why not use the internal `#push` and `#pop` methods of Array that already makes an Array simulate a stack? Why create the initial array with the full max length?
+Perhaps make this a config option?
+
 ## Queue
 
 A `Queue` can be initialized by calling:

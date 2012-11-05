@@ -23,6 +23,7 @@ class AutoStackTest < Test::Unit::TestCase
     assert !stack.full?
     assert stack.first == 1
     assert stack.length == 2
+    assert stack.last == 1
     # assert stack.size == 1
 
     stack.push(2)
@@ -30,6 +31,7 @@ class AutoStackTest < Test::Unit::TestCase
     assert !stack.singleton?
     assert stack.full?
     assert stack.first == 1
+    assert stack.last == 2
 
     stack.push(3)
     assert !stack.empty?

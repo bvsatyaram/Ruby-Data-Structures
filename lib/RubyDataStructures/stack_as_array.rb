@@ -1,5 +1,5 @@
 class RubyDataStructures::StackAsArray
-  attr_reader :length
+  attr_reader :length, :top
 
   # Initializes a stack of size +size+
   # The value of +top+ for an empty stack is +nil+
@@ -66,7 +66,7 @@ class RubyDataStructures::StackAsArray
   end
 
   def last
-    @array.last
+    @array[@top]
   end
 
   def each

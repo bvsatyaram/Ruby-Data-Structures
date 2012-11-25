@@ -22,9 +22,24 @@ Usage
 The `RubyDatStructures` library can be easily imported by running:
 
     require 'rubygems'
-    require 'RubyDatStructures'
+    require 'RubyDataStructures'
 
 The usage of each of the data structures is described below.
+
+You can enable macros to more conveniently create these data structures by:
+
+    require 'RubyDataStructures/macros'
+
+    @stack = stack(3)
+    @fifo = fifo_stack(5)
+    @arr = multi_array(1,2,3)
+    ...
+
+## Tests
+
+Run tests/specs from console: 
+
+    rake test
 
 ## Multi Dimensional Array
 
@@ -71,6 +86,10 @@ Examples:
     my_stack.push(2)
     my_stach.push(3)
     my_stack.pop        # Return `3`
+
+*Notes:*
+Why not use the internal `#push` and `#pop` methods of Array that already makes an Array simulate a stack? Why create the initial array with the full max length?
+Perhaps make this a config option?
 
 ## Queue
 
